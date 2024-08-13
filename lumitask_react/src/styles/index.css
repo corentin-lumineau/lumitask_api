@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap+PLUS+Rounded+1c&display=swap');
+
+
+:root {
+  --main-font-family: "M PLUS Rounded 1c", sans-serif;
+  --extra-bold-weight: 800;
+  --bold-weight: 700;
+  --regular-weight: 400;
+  --main-color: #E1E4F3;
+  --secondary-color: rgba(69, 84, 172, 1);
+  --secondary-color-transparent: rgba(69, 84, 172, 0.5);
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  color: var(--main-color);
+  font-family: var(--main-font-family);
+  background: url('./images/blue_gradient_background.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+  
+h2 {
+  font-size: 3rem;
+}
+
+ul {
+  margin: unset;
+  padding: unset;
+}
+
+li {
+  list-style: none;
+  color: var(--secondary-color);
+}
+
+p {
+  color: var(--secondary-color);
+  margin: unset;
+  padding: unset;
+}
+
+input {
+  border: none;
+  background: none;
+  padding: unset;
+}
+
+input::placeholder {
+  color: var(--secondary-color-transparent);
+  font-weight: var(--extra-bold-weight);
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+i {
+  color: var(--secondary-color);
+}
+  
