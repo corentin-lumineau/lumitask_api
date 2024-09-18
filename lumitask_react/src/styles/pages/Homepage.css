@@ -1,7 +1,6 @@
 .main-container {
     display: flex;
     height: 100%;
-    margin: 10px;
 }
 
 .navigator-container {
@@ -21,7 +20,6 @@
 .dashboard-block {
     height: 90%;
     width: 100%;
-    background: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     font-weight: var(--extra-bold-weight);
     /* padding: 5%; */
@@ -29,4 +27,9 @@
     flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
+    padding: 10px;
+}
+
+.features-container {
+    height: 90%;
 }

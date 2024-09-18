@@ -6,9 +6,14 @@
   --extra-bold-weight: 800;
   --bold-weight: 700;
   --regular-weight: 400;
-  --main-color: #E1E4F3;
-  --secondary-color: rgba(69, 84, 172, 1);
+  --main-color: rgba(69, 84, 172, 1);
+  --secondary-color: #E1E4F3;
   --secondary-color-transparent: rgba(69, 84, 172, 0.5);
+  --x-small-font-size: 5px;
+  --small-font-size: 10px;
+  --regular-font-size: 12px;
+  --large-font-size: 18px;
+  --xtra-large-font-size: 24px;
 }
 
 #root {
@@ -16,6 +21,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-size: unset;
+}
+
+html {
+  font-size: 12px;
 }
 
 body {
@@ -29,9 +39,28 @@ body {
   background-size: cover;
 }
 
-  
+h1 {
+  font-size: 2rem;
+  padding: unset;
+  margin: unset;
+}
+
 h2 {
-  font-size: 3rem;
+  font-size: 1.8rem;
+  padding: unset;
+  margin: unset;
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding: unset;
+  margin: unset;
+}
+
+h4 {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: unset;
 }
 
 ul {
@@ -47,7 +76,7 @@ li {
 p {
   color: var(--secondary-color);
   margin: unset;
-  padding: unset;
+  padding: 0.5rem;
 }
 
 input {
@@ -68,4 +97,14 @@ textarea:focus, input:focus{
 i {
   color: var(--secondary-color);
 }
+
+.MuiButtonBase-root {
+  border-radius: unset;
+}
+
+.MuiButtonBase-root:hover {
+  border-radius: unset;
+  border-radius: 5px;
+}
+
   

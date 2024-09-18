@@ -14,6 +14,8 @@ gem "puma", "~> 5.0"
 
 gem "rack-cors"
 
+gem 'faker', '~> 3.4', '>= 3.4.2'
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
@@ -41,6 +43,9 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'rspec-rails', '~> 5.0.0'
+  gem "factory_bot_rails"
+  gem 'shoulda-matchers', '~> 6.2'
 end
 
 group :development do
