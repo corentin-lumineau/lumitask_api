@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../styles/components/SearchBar.css"
+import "../../styles/components/SearchBar.css";
 
-export default function Searchbar() {
+export default function SearchBar() {
     return (
         <div className="search-bar-container">
             <input className="search-bar" type="text" placeholder="Search..."></input>

@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 import Homepage from './pages/Homepage';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { store } from './utils/store';
+import { StyledEngineProvider } from '@mui/material/styles';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Homepage />
+    <Provider store={store}>
+      <StyledEngineProvider injectFirst>
+        <Homepage />
+      </StyledEngineProvider>
+    </Provider>
   </React.StrictMode>
 );
 
